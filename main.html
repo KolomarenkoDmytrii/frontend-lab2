@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <title>Ательє "Птах" - Головна сторінка</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      aside {
+        float: right;
+        padding: 10px;
+        background: lightgrey;
+      }
+
+      .about {
+        padding: 0;
+        margin: 2em;
+      }
+
+      .goals {
+        padding: 0;
+        margin: 1em;
+      }
+
+      #change-order {
+        order: -1;
+      }
+
+      /* Вимога 8 */
+      nav button {
+        flex-grow: 1;
+        flex-shrink: 0.5;
+      }
+
+      /* Вимога 8 */
+      nav li:nth-child(odd) {
+        align-self: flex-end;
+      }
+
+      /* Вимога 2 */
+      h2 + ul {
+        font-style: italic;
+      }
+
+      /* Вимога 2 */
+      h2 ~ aside {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="site-title">
+        Ательє "Птах" <img src="img/logo.svg" height="72" alt="Логотип ательє">
+      </h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="main.html">Головна</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li>Відгуки про товар</li>
+        <li><a href="feedback.html">Зворотний зв’язок</a></li>
+        <li id="change-order"><button>Перейти у власний кабінет</button></li>
+        <li><button>Зареєструватись</button></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2 id="goals">Наша мета</h2>
+
+      <article class="about">
+        <p><i>Метою створення нашого ательє є надання клієнтам високоякісних
+        послуг з виготовлення та ремонту одягу, а також забезпечення
+        персоналізованого підходу до кожного замовлення.</i></p>
+
+        <p>Ми прагнемо стати місцем, де кожен клієнт може знайти індивідуальні
+        рішення задля задоволення своїх потреб у стилі та комфорті.
+        <em>Наша мета — створити атмосферу довіри, творчості та професіоналізму,
+        де клієнти отримують не лише готовий продукт, а й справжнє задоволення
+        від процесу співпраці.</em></p>
+
+        <h3>Завдання для досягнення мети</h3>
+        <ul class="goals">
+          <li>
+          Розробка та впровадження асортименту послуг, що включає пошиття
+          на замовлення, ремонт, адаптацію та модифікацію одягу.
+          </li>
+          <li>Формування команди висококваліфікованих професіоналів, яка здатна
+          забезпечити високий рівень обслуговування та індивідуальний підхід
+          до кожного клієнта.</li>
+          <li>Створення привабливого та комфортного простору для клієнтів,
+          зокрема організація зручних джерел консультацій та вибору
+          моделей.</li>
+        </ul>
+      </article>
+
+      <aside>
+          <ul>
+            <li><a href="#goals">Мета</a></li>
+            <li><a href="#clothes">Типи одягу на пошиття</a></li>
+            <li><a href="#contacts">Контактна інформація</a></li>
+
+            <li>
+              <h2>Наші партнери</h2>
+              <ul>
+                <li><a href=https://www.instagram.com/sew_perfect_kiev/>sew_perfect_kiev</a></li>
+                <li><a href=https://www.instagram.com/modernatelier/>Ательє «Модерн»</a></li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+
+      <h2 id="clothes">Типи одягу на пошиття</h2>
+      <article>
+        <p>Тут ви можете дізнатися основні категорії одягу, які можуть бути
+        на замовлення, разом з розмірами та орієнтовною ціною.</p>
+
+        <table>
+          <caption>Типи одягу на пошиття</caption>
+          <thead>
+            <tr>
+              <th>Тип одягу</th>
+              <th>Розміри</th>
+              <th>Ціна (грн)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th colspan="3">Верхній одяг</th>
+            </tr>
+            <tr>
+              <td>Куртки та пальта</td>
+              <td>S, M, L, XL</td>
+              <td>від 1500 до 5000</td>
+            </tr>
+            <tr>
+              <td>Плащі та спортивні куртки</td>
+              <td>S, M, L, XL</td>
+              <td>від 800 до 3000</td>
+
+            <tr>
+              <th colspan="3">Одяг для свят</th>
+            </tr>
+            <tr>
+              <td>Весільні сукні</td>
+              <td>XS, S, M, L</td>
+              <td>від 5000 до 10000</td>
+            </tr>
+            <tr>
+              <td>Святкові костюми</td>
+              <td>S, M, L, XL</td>
+              <td>від 4000 до 8000</td>
+
+            <tr>
+              <th colspan="3">Спортивний одяг</th>
+            </tr>
+            <tr>
+              <td>Футболки та шорти</td>
+              <td>S, M, L, XL</td>
+              <td>від 400 до 1200</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </main>
+
+    <footer>
+      <h2 id="contacts">Контактна інформація</h2>
+      <address>
+        <p class="address">Адреса: вул. Квіткова, буд. 22, м. Київ</p>
+        Номери телефонів:
+        <ul>
+          <li><a href="tel:+14155550132">+1 (415) 555‑0132</a></li>
+          <li><a href="tel:+14555350132">+1 (445) 535‑0132</a></li>
+        </ul>
+      </address>
+    </footer>
+  </body>
+</html>

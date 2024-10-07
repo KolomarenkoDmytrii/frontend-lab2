@@ -1,0 +1,245 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+button {
+    background-color: lightgray;
+    border: none;
+    color: black;
+    padding: 3px 3px;
+    min-width: 10em;
+    min-height: 3.5em;
+    text-align: center;
+}
+
+button:active {
+    background-color: gray;
+}
+
+/* Вимога 3 */
+/* Вимога 1 */
+a:link[href^="https:"] {
+    color: green;
+}
+a:link[href^="http:"] {
+    color: green;
+}
+
+/* Вимога 4 */
+/* Вимога 1 */
+a[href^="https:"]::before {
+   content: '🔗';
+}
+a[href^="http:"]::before {
+   content: '🔗';
+}
+
+/* Вимога 1 */
+h2[id] {
+    font-style: italic;
+}
+
+header {
+    position: absolute;
+    text-align: center;
+    font-size: 2rem;
+    top: 0;
+    background-color: powderblue;
+    width: 100%;
+    height: 4em;
+    font-family: "Trebuchet MS", serif;
+}
+
+/* Навігаційне меню */
+nav {
+    margin-top: 8em;
+    text-align: left;
+    width: 100%;
+}
+
+/* Вимога 7 */
+nav ul {
+    list-style-type: none;
+    align-items: start;
+    justify-content: space-around;
+    align-content: center;
+    display: flex;
+    flex-flow: row;
+    margin: 0;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+nav li a {
+    color: white;
+}
+
+nav li a:hover {
+  /* Вимога 5 */
+  background-color: #111;
+  font-size: 1.05em;
+}
+
+main {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+footer {
+    text-align: center;
+    /* Вимога 5 */
+    background-color: powderblue;
+    /*bottom: 0;*/
+    /*position: fixed;*/
+    /*z-index: -1;*/
+    width: 100%;
+}
+
+footer address ul {
+    list-style-type: none;
+}
+
+/* Таблиця */
+table {
+    border: solid 2px;
+    border-spacing: 0;
+}
+
+table:hover {
+    margin-top: 2vh;
+}
+
+table caption {
+    border: solid 1px;
+    font-style: italic;
+    background-color: hsl(0, 0%, 13%);
+    color: white;
+}
+/* Вимога 3 */
+table:first-child {
+    font-style: italic;
+}
+
+tbody tr th {
+    /* Вимога 5 */
+    background-color: rgb(136, 136, 136);
+}
+
+td {
+    border-bottom: 1px solid black;
+}
+
+/* Вимога 1 */
+address a[href^="tel:"] {
+    transition: font-size 2s;
+}
+address a[href^="tel:"]:hover {
+    font-size: 1.2em;
+}
+
+.address {
+    transition: font-size 2s;
+}
+.address:hover {
+    font-size: 1.2em;
+}
+
+/* Каталог */
+/* Вимога 9 */
+.catalog {
+    display: grid;
+    grid-template-columns: 0fr 1fr 0fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    justify-content: right;
+    align-content: space-between;
+}
+
+/* Вимога 6 */
+.catalog > dt {
+    font-style: italic;
+    font-family: "Trebuchet MS", serif;
+    align-content: center;
+    text-shadow: 5px 5px 2px gray;
+}
+
+/* Вимога 6 */
+.catalog > dd {
+    /* Вимога 5 */
+    border: 1px solid hsl(64, 50%, 30%);
+    border-top: dotted hsl(64, 50%, 50%);
+    border-bottom: medium solid hsl(64, 50%, 50%);
+    box-shadow: 5px 5px 1px 1px darkgray;
+    background: linear-gradient(#FFF, #999);
+    text-align: center;
+}
+
+.catalog > dd > img {
+    transition: filter 0.5s, transform 1s;
+}
+
+.catalog > dd > img:hover {
+    filter: grayscale(80%);
+    transform: scale(1.2);
+}
+
+.cloth-type {
+    font-style: italic;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
+/* Форма */
+.form-container {
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: lightgray;
+    border: none;
+    color: black;
+    padding: 3px 3px;
+    min-width: 10em;
+    min-height: 3.5em;
+    text-align: center;
+}
+
+input[type="submit"]:active {
+    background-color: gray;
+}
+
+input[type="radio"] {
+    accent-color: cyan;
+}
+
+input[type="radio"]:checked {
+    accent-color: powderblue;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+input[type="checkbox"] {
+    accent-color: powderblue;
+}
+
+select {
+    background-color: lightgray;
+    border: none;
+    color: black;
+    padding: 3px 3px;
+    text-align: center;
+}
+
+textarea {
+    text-align: left;
+}

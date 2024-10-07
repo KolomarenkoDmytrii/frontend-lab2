@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <title>Ательє "Птах" - Зворотний зв'язок</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Ательє "Птах" <img src="img/logo.svg" height="72" alt="Логотип ательє">
+      </h1>
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="main.html">Головна</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li>Відгуки про товар</li>
+        <li><a href="feedback.html">Зворотний зв’язок</a></li>
+        <li><button>Перейти у власний кабінет</button></li>
+        <li><button>Зареєструватись</button></li>
+      </ul>
+    </nav>
+
+    <main class="form-container">
+      <h2>Зворотний зв'язок</h2>
+      <form action="" method="post">
+        <p>
+          <label for="name">Ім'я та прізвище</label>
+          <input type="text" id="name" name="name" required>
+        </p>
+
+        <p>
+          <label for="email">Електронна пошта</label>
+          <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+          <label for="age">Вік</label>
+          <input type="number" min="0" id="age" name="age">
+        </p>
+
+        <p>
+          Чи є ви клієнтом?
+          <label for="client-yes">Так</label>
+          <input type="radio" value="yes" id="client-yes" name="is-client">
+
+          <label for="client-no">Ні</label>
+          <input type="radio" value="no" id="client-no" name="is-client">
+
+          <label for="client-planned">Планую стати</label>
+          <input type="radio" value="planned" id="client-planned" name="is-client">
+        </p>
+
+        <p>
+          <label for="purpose-of-feedback">Мета зворотного зв'язку</label>
+          <select name="purpose-of-feedback" id="purpose-of-feedback" required>
+            <option value="">-Виберіть мету-</option>
+            <option value="collaboration">співпраця</option>
+            <option value="complaint">скарга на неякісний пошив</option>
+            <option value="offer">пропозиція</option>
+            <option value="defect">наявність помилки</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="details">Детально</label>
+          <textarea id="details" name="details" rows="5" cols="33" maxlength="256" required>
+          </textarea>
+        </p>
+
+        <p><input type="submit" value="Надіслати"></p>
+
+        <p>
+          <label for="is-agree">Згодні на обробку інформації?</label>
+          <input type="checkbox" id="is-agree" name="is-agree" required>
+        </p>
+      </form>
+    </main>
+  </body>
+</html>
