@@ -196,6 +196,11 @@ address a[href^="tel:"]:hover {
     font-weight: bold;
 }
 
+.careinfo {
+    box-shadow: 5px 5px 1px 1px darkgray;
+    background: linear-gradient(#999, #FFF);
+}
+
 
 /* Форма */
 .form-container {
@@ -242,4 +247,37 @@ select {
 
 textarea {
     text-align: left;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 0.8em;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    z-index: 1;
+    list-style-type: none;
+    margin: 0;
 }

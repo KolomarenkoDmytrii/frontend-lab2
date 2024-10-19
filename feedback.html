@@ -23,12 +23,17 @@
       </ul>
     </nav>
 
-    <main class="form-container">
+    <main>
       <h2>Зворотний зв'язок</h2>
-      <form action="" method="post">
+      <form action="" method="post" class="form-container" id="feedback-form">
         <p>
-          <label for="name">Ім'я та прізвище</label>
+          <label for="name">Ім'я</label>
           <input type="text" id="name" name="name" required>
+        </p>
+
+        <p>
+          <label for="family-name">Прізвище</label>
+          <input type="text" id="family-name" name="family-name" required>
         </p>
 
         <p>
@@ -64,19 +69,54 @@
           </select>
         </p>
 
-        <p>
+        <p class="tooltip">
           <label for="details">Детально</label>
           <textarea id="details" name="details" rows="5" cols="33" maxlength="256" required>
           </textarea>
+          <span class="tooltiptext" id='details-tooltip'>Дякуючи Вам, ми стаємо кращі! Конкретизуйте мету звернення, будь ласка</span>
         </p>
+
 
         <p><input type="submit" value="Надіслати"></p>
 
         <p>
           <label for="is-agree">Згодні на обробку інформації?</label>
-          <input type="checkbox" id="is-agree" name="is-agree" required>
+          <input type="checkbox" id="is-agree" name="is-agree" >
         </p>
+        <p id="show-error-message"></p>
       </form>
+
+      <h2>Вивід звернень</h2>
+      <form action="" method="" id="show-feedback-form">
+        <p>
+          <label for="month">Номер місяця</label>
+          <input type="number" min="1" max="12" id="month" name="month">
+        </p>
+
+        <p>
+          <label for="hour">Година</label>
+          <input type="number" min="0" max="23" id="hour" name="hour">
+        </p>
+
+        <p><input type="submit" value="Вивести імена"></p>
+      </form>
+      <ul id="show-feedback-output"></ul>
+
+      <h2>Користувач з найменшим віком</h2>
+      <button id="show-minimal-age-user-button">Показати</button>
+      <ul id="minimal-age-user"></ul>
+
+      <h2>Кількість користувачів по віку</h2>
+      <button id="show-ages-count-button">Показати</button>
+      <ul id="ages-count"></ul>
+
+      <button id="show-sorted-feedbacks-button">Відсортувати за поштою</button>
+
+      <h2>Звернення</h2>
+      <div id="feedbacks">
+      </div>
     </main>
+
+    <script src="scripts/feedback.js"></script>
   </body>
 </html>
